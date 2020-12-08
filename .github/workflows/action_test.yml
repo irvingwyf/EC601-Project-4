@@ -32,10 +32,10 @@ jobs:
           pip install google-cloud-language==1.0.0
       - name: Test with pytest
         env:
-          consumer_key: ${{secret.consumer_key}}
-          consumer_secret: ${{secret.consumer_secret}}
-          access_key: ${{secret.access_key}}
-          access_secret: ${{secret.access_secret}}
+          consumer_key: ${{secret.CONSUMER_KEY}}
+          consumer_secret: ${{secret.CONSUMER_SECRET}}
+          access_key: ${{secret.ACCESS_KEY}}
+          access_secret: ${{secret.ACCESS_SECRET}}
           GOOGLE_APPLICATION_CREDENTIALS: ${{secret.GOOGLE_APPLICATION_CREDENTIALS}}
         run: |
           pytest
