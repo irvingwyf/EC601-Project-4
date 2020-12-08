@@ -19,7 +19,7 @@ def test_sentiment():
     assert Lscore > 0
     assert Lmagnitude > 0
     assert Hscore < 0
-    assert Hmagnitude < 0
+    assert Hmagnitude > 0
 
 def test_category():
     text = "That actor on TV makes movies in Hollywood and also stars in a variety of popular new TV shows."
