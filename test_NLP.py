@@ -25,7 +25,7 @@ def test_category():
 
 def test_extract_words():
     text = "Billionaire industrialist and genius inventor Tony Stark is kidnapped and forced to build a devastating weapon."
-    result = extract_words(client, text)
+    result = extract_words(text)
     for entity in result.entities:
         assert entity.name in text
         assert entity.salience <= 1
