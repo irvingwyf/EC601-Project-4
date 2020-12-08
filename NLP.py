@@ -10,10 +10,9 @@ from google.oauth2 import service_account
 from google.cloud.language import enums
 from google.cloud.language import types
 
-# service_account_info = json.loads(os.environ['GOOGLE_APPLICATION_CREDENTIALS'])
-# credentials = service_account.Credentials.from_service_account_info(service_account_info)                                
-# client = language.LanguageServiceClient(credentials=credentials)
-client = language.LanguageServiceClient.from_service_account_json('ec601-project-2-5172714cb435.json')
+service_account_info = json.loads(os.environ['GOOGLE_APPLICATION_CREDENTIALS'])
+credentials = service_account.Credentials.from_service_account_info(service_account_info)                                
+client = language.LanguageServiceClient(credentials=credentials)
 
 def extract_text(url, **data):
     timeout = data.get('timeout', 50)
