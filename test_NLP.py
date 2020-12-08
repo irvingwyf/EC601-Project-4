@@ -1,3 +1,7 @@
+#!/usr/bin/env python
+# encoding: utf-8
+#Author - Yifan Wang irvingw@bu.edu
+
 from NLP import *
 import os
 import json
