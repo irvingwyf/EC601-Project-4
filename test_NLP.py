@@ -13,7 +13,7 @@ def test_extract_text():
 
 def test_sentiment():
     Love = "I Love You My Darling!!!"
-    Hate = "Shit Hit The Fan, Damn!"
+    Hate = "Worst challenge!"
     Lscore, Lmagnitude = sentiment(Love)
     Hscore, Hmagnitude = sentiment(Hate)
     assert Lscore > 0
