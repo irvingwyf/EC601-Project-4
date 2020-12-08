@@ -4,7 +4,7 @@ from google.oauth2 import service_account
 import json
 
 #Use github secret passed as environment var
-service_account_info = json.loads(os.environ['GOOGLE_SECRET'])
+service_account_info = json.loads(os.environ['GOOGLE_APPLICATION_CREDENTIALS'])
 credentials = service_account.Credentials.from_service_account_info(service_account_info)                                
 client = language.LanguageServiceClient(credentials=credentials)
 
