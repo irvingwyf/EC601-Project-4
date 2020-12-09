@@ -73,8 +73,9 @@ def analyze_tweets(ID, Count):
         print(e)
     tokens = client.analyze_syntax(text).tokens  
     for token in tokens: 
-        print(u'{}: {}'.format(token.part_of_speech.tag.name, token.text.content)) 
-    f.close()
+        speech_tag = enums(token.part_of_speech.tag) 
+        print(u'{}: {}'.format(speech_tag.name, token.text.content))
+        f.close()
 
 if __name__ == "__main__":
     ID = "@RobertDowneyJr"
