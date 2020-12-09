@@ -73,7 +73,7 @@ def analyze_tweets(ID, Count):
         print(e)
     tokens = client.analyze_syntax(text).tokens  
     for token in tokens: 
-        speech_tag = enums.PartOfSpeech.Tag(token.part_of_speech.tag) 
+        speech_tag = token.part_of_speech.tag 
         print(u'{}: {}'.format(speech_tag.name, token.text.content)) 
     f.close()
 
