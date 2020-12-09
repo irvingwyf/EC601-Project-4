@@ -81,13 +81,3 @@ if __name__ == "__main__":
     ID = "@RobertDowneyJr"
     Count = 5
     analyze_tweets(ID, Count)
-    input_file = "tweet.txt"
-    with io.open(input_file, "r") as inp: 
-        docu = inp.read()       
-    text = types.Document(content = docu, type = enums.Document.Type.PLAIN_TEXT) 
-    print(text)
-    input_file = "tweet_nlp.txt"
-    with io.open(input_file, "r") as inp: 
-        docu = inp.read()       
-    text = types.Document(content = docu, type = enums.Document.Type.PLAIN_TEXT) 
-    print(text)
