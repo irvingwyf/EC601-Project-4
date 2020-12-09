@@ -14,5 +14,5 @@ def test_analyze_tweets():
     assert stat("tweet.txt").st_size != 0
     with open("tweet.txt", 'r') as tweet:
         lines = [i for i in tweet.readlines() if len(i)>1]
-    assert len(lines) == 1
+    assert len(lines) >= 1
 
