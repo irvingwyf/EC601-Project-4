@@ -1,3 +1,7 @@
+#!/usr/bin/env python
+# encoding: utf-8
+#Author - Yifan Wang irvingw@bu.edu
+
 from unify_tweet_APIs import*
 from os import path
 from os import stat
